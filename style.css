@@ -2,16 +2,10 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    border: 1px solid red;
 }
 
 body {
     background-color: grey;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
 }
 
 .wrap {
@@ -23,9 +17,49 @@ header {
     overflow: auto;
     border: 1px black dashed;
     gap: 1em;
+
+    margin-bottom: 20px;
 }
 
 .wrap > div {
     width: 150px;
     height: 150px;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: black;
+}
+
+.box4 {
+    background-color: green;
+}
+.order {
+    padding: 20px;
+}
+.order > div{
+    display: flex;
+    height: 100px;
+}
+
+.order > div:nth-child(even) {
+    flex-direction: row-reverse;
+    background-color: white;
+    font-size: 3em;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.order > div:nth-child(odd) {
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    text-align: center;
 }
