@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid red;
+}
+
+body {
+    background-color: grey;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    resize: both;
+    overflow: auto;
+    border: 1px black dashed;
+    gap: 1em;
+}
+
+.wrap > div {
+    width: 150px;
+    height: 150px;
+}
